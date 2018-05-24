@@ -1,23 +1,23 @@
 module.exports = {
     data: [{
         "id": 1,
-        "cohort_name": "17-01-WD-DP",
-        "cohort_code": "g100",
-        "number_of_students": 28
+        "cohortName": "17-01-WD-DP",
+        "cohortCode": "g100",
+        "numberOfStudents": 28
     }, {
         "id": 2,
-        "cohort_name": "17-01-DS-GT",
-        "cohort_code": "g105",
-        "number_of_students": 24
+        "cohortName": "17-01-DS-GT",
+        "cohortCode": "g105",
+        "numberOfStudents": 24
     }, {
         "ID": 3,
-        "Cohort Name": "17-02-WD-PX",
-        "Cohort Code": "g109",
-        "Number of Students": 30
+        "cohortName": "17-02-WD-PX",
+        "cohortCode": "g109",
+        "numberOfStudents": 30
     }, {
         "ID": 4,
-        "Cohort Name": "17-03-WD-BD",
-        "Cohort Code": "g110",
-        "Number of Students": 29
+        "cohortName": "17-03-WD-BD",
+        "cohortCode": "g110",
+        "numberOfStudents": 29
     }]
 }
