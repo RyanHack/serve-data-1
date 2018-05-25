@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const cohorts = require('./cohorts')
 const cors = require('cors')
-
+const port = (process.env.PORT || 3000)
 
 
 
@@ -33,4 +33,4 @@ app.get('/:id', (req, res) => {
     res.json(findById(cohorts, req.params.id))
 })
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(port, () => console.log('Example app listening somewhere...'))
