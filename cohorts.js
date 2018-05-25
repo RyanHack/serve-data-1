@@ -10,12 +10,12 @@ module.exports = {
         "cohortCode": "g105",
         "numberOfStudents": 24
     }, {
-        "ID": 3,
+        "id": 3,
         "cohortName": "17-02-WD-PX",
         "cohortCode": "g109",
         "numberOfStudents": 30
     }, {
-        "ID": 4,
+        "id": 4,
         "cohortName": "17-03-WD-BD",
         "cohortCode": "g110",
         "numberOfStudents": 29
