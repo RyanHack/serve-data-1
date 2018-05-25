@@ -4,15 +4,22 @@ const cohorts = require('./cohorts')
 const cors = require('cors')
 
 
+
+
 function findById(cohorts, id) {
-    return cohorts.data.find(cohort => cohort.id === parseInt(id))
+    return cohorts.find(cohort => cohort.id === parseInt(id))
+
+
 }
 app.use(cors())
 
-app.get('/', (req, res) => res.status(200).json(cohorts))
+app.get('/', (req, res) => {
+    console.log(cohorts.data)
+    res.status(200).json(cohorts)
+})
 
 app.get('/:id', (req, res) => {
-    let query = findById(cohort.data, parseInt(req.params.id))
+    let query = findById(cohorts.data, parseInt(req.params.id))
     if (query === undefined) {
         res.status(404).json({
             error: {
