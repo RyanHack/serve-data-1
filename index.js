@@ -8,13 +8,11 @@ const port = (process.env.PORT || 3000)
 
 function findById(cohorts, id) {
     return cohorts.find(cohort => cohort.id === parseInt(id))
-
-
 }
+
 app.use(cors())
 
 app.get('/', (req, res) => {
-    console.log(cohorts.data)
     res.status(200).json(cohorts)
 })
 
@@ -29,7 +27,6 @@ app.get('/:id', (req, res) => {
     } else {
         res.status(200).json(query)
     }
-
     res.json(findById(cohorts, req.params.id))
 })
 
