@@ -16,6 +16,7 @@ app.get('/', (req, res) => {
     res.status(200).json(cohorts)
 })
 
+
 app.get('/:id', (req, res) => {
     let query = findById(cohorts.data, parseInt(req.params.id))
     if (query === undefined) {
